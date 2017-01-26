@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <CheckBox
+        android:text="Car"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="61dp"
+        android:layout_marginTop="53dp"
+        android:id="@+id/checkBoxCar"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentStart="true"
+        android:textSize="24sp"/>
+
+    <TextView
+        android:text="What do you like?"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="29dp"
+        android:id="@+id/textView"
+        android:textSize="36sp"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/checkBoxCar"/>
+
+    <CheckBox
+        android:text="Sport"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/checkBoxCar"
+        android:layout_alignStart="@+id/textView"
+        android:layout_marginStart="19dp"
+        android:id="@+id/checkBoxSport"
+        android:textSize="24sp"/>
+
+    <CheckBox
+        android:text="Music"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/checkBoxSport"
+        android:layout_toEndOf="@+id/checkBoxSport"
+        android:layout_marginStart="35dp"
+        android:id="@+id/checkBoxMusic"
+        android:textSize="24sp"/>
+
+    <CheckBox
+        android:text="Movie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/checkBoxMusic"
+        android:layout_toEndOf="@+id/checkBoxMusic"
+        android:layout_marginStart="29dp"
+        android:id="@+id/checkBoxMovie"
+        android:textSize="24sp"/>
+
+    <CheckBox
+        android:text="Science"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/checkBoxCar"
+        android:layout_alignStart="@+id/checkBoxCar"
+        android:layout_marginTop="27dp"
+        android:id="@+id/checkBoxScience"
+        android:textSize="24sp"/>
+
+    <CheckBox
+        android:text="Politic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/checkBoxPolitic"
+        android:textSize="24sp"
+        android:layout_alignBaseline="@+id/checkBoxScience"
+        android:layout_alignBottom="@+id/checkBoxScience"
+        android:layout_toEndOf="@+id/checkBoxScience"/>
+
+    <CheckBox
+        android:text="Economic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/checkBoxEconomic"
+        android:textSize="24sp"
+        android:layout_alignBaseline="@+id/checkBoxPolitic"
+        android:layout_alignBottom="@+id/checkBoxPolitic"
+        android:layout_toEndOf="@+id/textView"/>
+
+    <CheckBox
+        android:text="Art"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/checkBoxPolitic"
+        android:layout_alignStart="@+id/checkBoxMusic"
+        android:id="@+id/checkBoxArt"
+        android:textSize="24sp"/>
+
+    <Button
+        android:text="OK"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignEnd="@+id/checkBoxArt"
+        android:layout_marginEnd="37dp"
+        android:layout_marginBottom="90dp"
+        android:id="@+id/buttonOk"/>
+
+</RelativeLayout>
